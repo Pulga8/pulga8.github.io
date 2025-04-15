@@ -2,9 +2,10 @@
 layout: post
 title: Mastodon desde la terminal
 subtitle: Usando Toot para ver Mastodon
+cover-img: /assets/img/toot1.jpg
 gh-repo: ihabunek/toot
 gh-badge: [star, fork, follow]
-tags: [CLI, Mastodon, Terminal]
+tags: [CLI, Mastodon, Terminal, Bash]
 comments: true
 mathjax: true
 author: Pulga
@@ -25,15 +26,14 @@ Probé esta herramienta (tool) desde un [Antix](https://antixlinux.com/) modific
 Hay varias formas de instalar toot, yo usé apt-get.
 
 1. Actualizamos:
-
-```sh
-$ sudo apt-get update
-```
+  ```sh
+  $ sudo apt-get update
+  ```
 
 2. Instalamos
-```sh
-$ sudo apt-get -y install toot
-```
+  ```sh
+  $ sudo apt-get -y install toot
+  ```
 
 <details markdown="1">
 <summary>Desinstalar</summary>
@@ -49,16 +49,13 @@ $ sudo apt-get -y autoremove toot
 
 También se puede instalar vía pip, apt, brew y demás, en la documentación están bien especificados los casos.
 
-
-
-
-![Toteando](https://beautifuljekyll.com/assets/img/toot3.png)
+![Toteando](/assets/img/toot3.png)
 
 Y al tootear:
 
-![Toteando](https://beautifuljekyll.com/assets/img/toot4.png){: .mx-auto.d-block :}
+![Toteando](/assets/img/toot4.png){: .mx-auto.d-block :}
 
-Here's a code chunk:
+<!-- Here's a code chunk:
 
 ~~~
 var foo = function(x) {
@@ -116,4 +113,4 @@ If the above image is broken, then you'll need to follow the instructions [in th
 <details markdown="1">
 <summary>Click here!</summary>
 Here you can see an **expandable** section
-</details>
+</details> -->

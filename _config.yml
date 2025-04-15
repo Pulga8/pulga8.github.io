@@ -51,7 +51,7 @@ round-avatar: true
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  github: "@Pulga8"
+  github: "Pulga8"
 #  medium: yourname
 #  reddit: yourname or r/yoursubreddit
 #  xing: yourname
@@ -95,7 +95,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "pxqf.com"
+url-pretty: "pulga.com"
 
 # Add the website title to the title of every page
 title-on-all-pages: true
