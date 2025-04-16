@@ -89,6 +89,7 @@ share-links-active:
   twitter: true
   facebook: true
   linkedin: true
+  mastodon: true
   vk: false
   reddit: false
 
