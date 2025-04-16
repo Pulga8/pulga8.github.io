@@ -4,10 +4,10 @@ title: Acerca de
 subtitle: Uno más del promedio.
 ---
 
-En estas instancias me nombro como pulga, podés decirme como quieras mientras sea con cariño.
+Me gusta saber cómo funcionan las cosas al igual que mucha gente, y me gusta la "tecnología", en sus variables formas.
+Participo de @Cybercirujas.
 
-> Me gusta saber como funcionan las cosas como a mucha gente, y me gusta la "tecnología", en sus variables formas.
+> En estas instancias me nombro como pulga.
 
 ¡Hasta que la obsolescencia programada sea postergada!
-@Cybercirujas
 
