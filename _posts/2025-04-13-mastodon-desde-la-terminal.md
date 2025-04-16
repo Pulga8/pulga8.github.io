@@ -18,7 +18,7 @@ Por las dudas mencionar que hace falta una cuenta en alguna instancia de mastodo
 
 ## Toot
 
-Toot es un cliente de [Mastodon](https://mastodon.social/) desde la línea de comandos, o terminal. Permite interactuar con instancias de Mastodon, con una interfaz muy liviana desde la consola.
+[Toot](https://toot.bezdomni.net/) es un cliente de [Mastodon](https://mastodon.social/) desde la línea de comandos, o terminal. Permite interactuar con instancias de Mastodon, con una interfaz muy liviana sin abrir el navegador.
 
 Lo único no tan sencillo es el tema de las imágenes, pero se habla sobre éso [acá](https://github.com/ihabunek/toot?tab=readme-ov-file#tui-features) y no tienen realmente un inconveniente.
 
@@ -27,11 +27,11 @@ Lo único no tan sencillo es el tema de las imágenes, pero se habla sobre éso 
 [Documentación de Mastodon.](https://docs.joinmastodon.org/)
 </details>
 
-Probé esta herramienta desde un [Antix](https://antixlinux.com/) modificado, conocido como [Cirujantix](https://cybercirujas.rebelion.digital/foro/viewtopic.php?t=324) ya que es un Antix modificado por el grupo Cybercirujas :)
+Probé esta herramienta desde un [Antix](https://antixlinux.com/) modificado, conocido como [Cirujantix](https://cybercirujas.rebelion.digital/foro/viewtopic.php?t=324) ya que es un Antix modificado por [@Cybercirujas](https://cybercirujas.rebelion.digital/foro/) :)
 
 ## Instalemos Toot
 
-Hay varias formas de instalar toot, yo usé apt-get si mal no recuerdo.
+Hay varias formas de instalar Toot, yo usé apt-get si mal no recuerdo.
 
 1. Actualizamos:
   ```sh
@@ -58,6 +58,9 @@ $ sudo apt-get -y autoremove toot
 > También se puede instalar vía pip, apt, brew y demás, en la documentación están bien especificados los métodos o formas.
 
 ## Bueno vamo' a tootear
+
+{: .box-note}
+'toot' es una publicación en la red social Mastodon, sería lo mismo que tweet en lo que fue Twitter.
 
 Una vez instalado debemos iniciar sesión, para esto está el comando:
 
@@ -92,7 +95,7 @@ Authorization code: Se está abriendo en una sesión de navegador existente.
 A lo cual seguimos el link como en cualquier método de inicio de sesión.
 Esto nos lleva al navegador donde nos pedirá darle acceso de lectura, escritura, seguimientos, silenciados, bloqueados, y no recuerdo si algo más. Y tiene sentido que pida estos permisos, ya que tiene que poder hacer dichas cosas, esto es, vamos a querer tootear desde esta herramienta, leer toots, y demás opciones.
 
-Luego de esto nos aparece el código de autentificación, para autorizar justamente al cliente toot a usar mastodon.
+Luego de esto nos aparece el código de autentificación, para autorizar a Toot a usar Mastodon.
 
 Pegamos el código en la terminal:
 
@@ -117,14 +120,14 @@ Para cerrar la sesión creo que era así:
 ```sh
 $ toot logout usuario@instancia
 ```
-o agregando comillas así, no recuerdo:
+o agregando comillas, no recuerdo:
 
 ```sh
 $ toot logout "usuario@instancia"
 ```
 </details>
 
-Ahora nos disponemos a abrir la interfaz gráfica de toot:
+Ahora nos disponemos a abrir la interfaz gráfica de Toot:
 
 ```sh
 $ toot tui
@@ -139,7 +142,7 @@ Tooteando desde Toot
 Para escribir un toot apretamos la letra **C**
 
 Nos abrirá una "sobrepantalla" o como quieran decirle, con las opciones de escribir, publicar el toot, y un par de ajustes.
-Escribimos  nuesto toot con la famosa entrada "Hola desde..."
+Escribimos nuesto toot con la famosa entrada "Hola desde..."
 
 ![Toteando](/assets/img/toot3.png)
 
@@ -173,7 +176,7 @@ $ toot notifications
 $ toot timeline --count 5
 ```
 
-De esta forma, hasta se podrían calendarizar toots, ya que con el gran `cron` o cualquier método de ejecución por fecha de este comando, alguna cola de tareas, etc, permitiría dejar un toot para que se publique en algún día y hora que se quiera.
+De esta forma, hasta se podrían calendarizar toots, ya que con el gran `cron` o cualquier método de ejecución por fecha de este comando, alguna cola de tareas (Worker), etc, permitiría dejar un toot para que se publique en algún día y hora que se quiera.
 
 Lo usé en una compu con 2 cores y 2Gb de ram, y obviamente jamás me anduvo lento ni nada.
 
