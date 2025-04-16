@@ -2,7 +2,7 @@
 layout: post
 title: Mastodon desde la terminal
 subtitle: Usando Toot para ver Mastodon
-cover-img: /assets/img/toot1.jpg
+cover-img: /assets/img/toot1.png
 gh-repo: ihabunek/toot
 gh-badge: [star, fork, follow]
 tags: [CLI, Mastodon, Terminal, Bash]
@@ -101,7 +101,7 @@ Authorization code: Se está abriendo en una sesión de navegador existente.
 aAeUoyYWQlXxTB9lYOV-yhocIrZ3-bGKlpBL-LYtNAN2FvR
 
 Requesting access token...
-Access token saved to config at: /home/joan/.config/toot/config.json
+Access token saved to config at: /home/cyber/.config/toot/config.json
 
 ✓ Successfully logged in.
 ~~~
