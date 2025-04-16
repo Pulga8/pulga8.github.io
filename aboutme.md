@@ -1,16 +1,17 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: Acerca de
+subtitle: Uno más del promedio.
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+En estas instancias me nombro como pulga, podés decirme como quieras mientras sea con cariño.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+> Lo "nerd", "geek" lo veo exclusivo, pero me gusta saber como funcionan las cosas como a mucha gente, y me gusta la "tecnología", desde las formas de hacer nudos, hasta un despliegue continuo, demostraciones matemáticas, etc.
 
-What else do you need?
+Trabajo, estudio, y soy cyberciruja.
+¡Hasta que toda obsolescencia sea postergada!
 
-### My story
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+### Mi historia
+
+To be honest... es la misma que la del resto, no estoy fuera del promedio.

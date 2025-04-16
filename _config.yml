@@ -79,7 +79,7 @@ social-network-links:
 
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
-rss-description: This website is a blog of pulga
+rss-description: Este sitio web es el blog de pulga
 
 ###########################
 # --- General options --- #
