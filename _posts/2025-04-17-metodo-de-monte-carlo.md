@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Método de Monte Carlo
-subtitle: Excerpt from Soulshaping by Jeff Brown
+subtitle: Estimando el número Pi con Probabilidad y Estadística
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
@@ -17,7 +17,7 @@ Este es un posteo de aprendizaje y de prueba, no debe ser usado como guía técn
 
 ## Monte Carlo
 
-Montecarlo es un casino en Mónaco, el método trae su nombre de ahí.
+Montecarlo es un casino en Mónaco, el [método](https://es.wikipedia.org/wiki/M%C3%A9todo_de_Montecarlo) trae su nombre de ahí.
 
 Con ésto se pueden **"estimar"** integrales definidas que sean complicadas de calcular, y es un método... "intuitivo" a diferencia de métodos analíticos como las **Reglas Gaussianas** que no se me ocurrirían jamás.
 
