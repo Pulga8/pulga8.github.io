@@ -7,7 +7,6 @@ gh-repo: ihabunek/toot
 gh-badge: [star, fork, follow]
 tags: [CLI, Mastodon, Terminal, Bash]
 comments: true
-mathjax: true
 author: Pulga
 ---
 
