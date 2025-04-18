@@ -89,7 +89,7 @@ Obtendríamos:
 
 $$\frac{12+15+13+10+15}{5}=13$$
 
-Entonces tenemos que en el número de caras estimado será 13, pero cuanto más valores tengamos, mejor estimaremos el valor.
+Entonces tenemos que el número de caras estimado será 13, pero cuanto más valores tengamos, mejor estimaremos el valor.
 
 
 ## Estimando π (pi)
@@ -116,7 +116,7 @@ Formalmente:
 
 $$4\sum_{j=1}^N {x_j}^2+{y_j}^2 \space ,tales \space que\space (x²+y²<1)$$
 
-> Esto se lee como "4 por la sumatoria de los xs al cuadraro más los ys al cuadrado, y representa sumar todos los pares que caigan dentro de la circunferencia y multiplicarlos por 4, osea lo mismo para los otros cuadrantes.
+> Esto se lee como "4 por la sumatoria de los xs al cuadrado más los ys al cuadrado, y representa sumar todos los pares que caigan dentro de la circunferencia y multiplicarlos por 4, osea lo mismo para los otros cuadrantes.
 
 Veamos una animación:
 
@@ -137,7 +137,7 @@ Haremos lo mismo con esto la cantidad de puntos que cayeron dentro de la circunf
 $$\frac{941}{1200}\approx 0,784166667$$
 
 Esto está muy lejos de Pi.
-Pero esto es para sólo una parte de la circunferencia, recordemos que dijimos:
+Pero esto es sólo para una parte de la circunferencia, recordemos que dijimos:
 
 | *"Pero podemos calcular sólo un cuadrante del circulo y luego multiplicarlo por 4."*
 
@@ -169,7 +169,7 @@ def valorPi(Nsim):
         u = 2 * random() -1
         v = 2 * random() - 1
         if u ** 2 + v ** 2 <= 1:
-        enCirculo += 1
+            enCirculo += 1
     return 4 * enCirculo/Nsim
 valorPi(Nsim)
 ```
