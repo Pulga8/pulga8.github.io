@@ -3,7 +3,7 @@ layout: post
 title: Método de Monte Carlo
 subtitle: Estimando el número Pi con Probabilidad y Estadística
 thumbnail-img: /assets/img/Pi_monte_carlo_all.gif
-share-img: /assets/img/path.jpg
+share-img: /assets/img/Pi_monte_carlo_2.png
 tags: [Monte Carlo, Python, Probabilidad]
 mathjax: true
 author: Pulga
