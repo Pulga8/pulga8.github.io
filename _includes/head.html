@@ -1,6 +1,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="fediverse:creator" content="@pulganw@rebel.ar">
 
   {% capture pagetitle %}
     {%- if page.share-title -%}
@@ -150,8 +151,8 @@
 
   <meta property="twitter:title" content="{{ title }}">
   <meta property="twitter:description" content="{{ description }}">
-  <meta name="fediverse:creator" content="@pulganw@rebel.ar">
-  
+
+
   {% if img != "" %}
   <meta name="twitter:image" content="{{ img | absolute_url }}">
   {% endif %}
