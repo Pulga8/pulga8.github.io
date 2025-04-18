@@ -2,8 +2,8 @@
 layout: post
 title: Método de Monte Carlo
 subtitle: Estimando el número Pi con Probabilidad y Estadística
-cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/thumb.png
+cover-img: /assets/img/Pi_monte_carlo_1.png
+thumbnail-img: /assets/img/Pi_monte_carlo_all.gif
 share-img: /assets/img/path.jpg
 tags: [Monte Carlo, Python, Probabilidad]
 mathjax: true
@@ -146,9 +146,25 @@ $$\lim_{x\rightarrow ∞}$$
 
 Nos referíamos a ir aumentando cada vez más la cantidad de experimentos, de forma tal que si seguimos viendo el gif, el *n* aumenta hasta 10.000 llegando casi a un valor muy próximo a pi.
 
+![](/assets/img/Pi_monte_carlo_1.png)
+
 
 Calculamos un área con una probabilidad... va... no **calculamos**... **estimamos**... esa es la principal diferencia de este método, con cualquier método analítico como las *Reglas Gaussianas*.
 
-Otra de las principales diferencias entre estimar y aproximar, es que la estimación, ósea el método probabilistico que acabamos de ver, nunca habal del error, no tenemos una cota, de error. Por lo general cuando uno aproxima analíticamente, obtiene una fórmula de la aproximación más la fórmula del error, entonces sabe el valor que tiene y por cuánto le está errando. En este caso no podemos saber por cuánto le erramos, porque es una probabilidad.
+Otra de las principales diferencias entre estimar y aproximar, es que la estimación, ósea el método probabilistico que acabamos de ver, nunca habla del error, no tenemos una cota, de error. Por lo general cuando uno aproxima analíticamente, obtiene una fórmula de la aproximación más la fórmula del error, entonces sabe el valor que tiene y por cuánto le está errando. En este caso no podemos saber por cuánto le erramos, porque es una probabilidad.
 
 A mí me pareció increible este método, quizás no está bien explicado, más aún mezclando notación "formal" con querer llevarlo a una forma "sencilla", hay puntos clave que son omitidos para poder transmitir la idea general.
+
+## Dejo código en Python para el cálculo de pi
+
+```py
+def valorPi(Nsim):
+    enCirculo = 0.
+    for _ in range(Nsim):
+        u = 2 * random() -1
+        v = 2 * random() - 1
+        if u ** 2 + v ** 2 <= 1:
+        enCirculo += 1
+    return 4 * enCirculo/Nsim
+valorPi(Nsim)
+```
