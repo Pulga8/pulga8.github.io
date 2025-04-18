@@ -60,11 +60,16 @@ Esto funciona por que el método se basa en dos grandes resultados:
     
     La idea de esto es que si sumamos todas las variables
     $$X1+X2+X3+X4+X5$$
+
     Y las dividimos por la cantidad de variables aleatorias
+
     $$\frac{X1+X2+X3+X4+X5}{5}$$
+
     Lo que conocemos como promedio, pero de variables aleatorias.
     Si aumentamos la cantidad de variables mucho, osea `n` variables
+
     $$\lim_{x\rightarrow ∞} \frac{X1+X2+\dots+Xn}{n}=\mu $$
+
     El límite de esto va a ser igual a μ(mu), osea el valor medio de las variables aleatorias.
     
     En criollo si sumamos todos los experimentos y los dividimos por la cantidad de experimentos, el resultado va a ser el valor esperado que tenían esas variables (Como es el límite sería hacer una cantidad enorme de estos experimentos). Hay una condición que no mencioné antes pero X1,X2,X3,X4,X5 tienen que ser independientes y estar idénticamente distribuidas.
@@ -74,6 +79,7 @@ Esto funciona por que el método se basa en dos grandes resultados:
 
 En resumen las dos propiedades nos dicen que es prácticamente improbable que una realización de los experimentos Xs, en nuestro caso X1,X2,X3,X4,X5, no cumpla que el límite de sus promedios se aproxime a un valor estimado θ(Theta) a medida que realizamos más experimentos, osea cuando n tienda a infinito.
 Esto escrito en fórmula es:
+
 $$\lim_{x\rightarrow ∞} \frac{X1+X2+\dots+Xn}{n}=\theta$$
 
 Metamos un ejemplo:
