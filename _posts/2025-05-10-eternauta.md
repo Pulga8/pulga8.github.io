@@ -3,7 +3,8 @@ layout: post
 title: Eternauta
 subtitle: No por insultar es Argentino
 thumbnail-img: /assets/img/eternauta.jpeg
-share-img: /assets/img/eternauta_bg.jpeg
+cover-img: /assets/img/eternauta_bg.jpeg
+share-img: /assets/img/eternauta.jpeg
 tags: [Eternauta, LLMs]
 author: Pulga
 ---
