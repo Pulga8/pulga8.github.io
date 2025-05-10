@@ -24,13 +24,13 @@ Ni ahí con las tendencias.
 Desde que se anunció para mi no es una serie del eternauta. Es una serie con una temática "robada", al igual que las pelis de Star Wars de disnei, al igual que tantas otras. Y está bien que así sea porque netflis necesita vender y la sociedad consumir.
 No me dedico ni me interesa bardear dichas cosas, simplemente no las consumo. Así como no voy a mcdonal a comer una ensalada. Por más que me gusten las ensaladas.
 
-Cada vez que me ofrecieron ver el Eternauta me negué porque no era mi intención verla de hecho estoy consumiendo otra serie actualmente, así que prefería seguir viendo lo que estoy viendo. Pero decir "no" al eternauta, me llevó a que se piense o que "soy un hater/odiador" del eternauta, o que tenga que fundamentar el porqué no quiero verla.
+Cada vez que me ofrecieron ver el Eternauta me negué porque no era mi intención verla, de hecho estoy consumiendo otra serie actualmente, así que prefería seguir viendo lo que estoy viendo. Pero decir "no" al eternauta, me llevó a que se piense o que "soy un hater/odiador" del eternauta, o que tenga que fundamentar el porqué no quiero verla.
 Me parece fantástico que exista la serie, así como la película del "Juicio a las Juntas" y que cada quien las disfrute como quiera, así como mucha gente disfruta de las Star Wars de disnei, a mí no me gustan porque no las creo, me parecen forzadas, el factor comercial me nubla el disfrute.
 
 ## Marcas
 
 Una persona me comentaba "Es muy raro la cantidad de marcas que aparecen en la serie y sin cuidado".
-De hecho compartimos post barderos y post reinvindicadores con esta persona, y me criticaba el "como voy a escribir esto sin haber visto ningún capitulo de la serie".
+De hecho compartimos notas/críticas barderos y reinvindicadoras con esta persona, y me criticaba el "como voy a escribir esto sin haber visto ningún capítulo de la serie".
 
 Una de esas notas fue la de ["Nevará Siempre"](https://brecha.com.uy/nevara-siempre/), donde menciona muchas de las marcas que aparecen en la serie "(PedidosYa, Burger King, Johnny Walker, Maersk, Lacoste, Nike, Puma, Carrefour, incluso La Gotita y Mostaza, por solo citar algunos)"
 
@@ -169,6 +169,8 @@ Si miramos marcas internacionales + supermercados + farmacias, vemos que el arge
 ```
 
 Se parece bastante, y me sorprende que no aparezca en la serie FarmaCity... pero bueno... también hay que tener en cuenta que las marcas aportan su monto para aparecer.
+
 La salida del bot mezclado con por ejemplo la marca "La Gotita" y demás puede llegar a crear una idea de lo que sería la identidad cultural de un "argentino".
+
 Ni hablar que las primeras escenas forzadas jugando al truco ya llevan a pensar que quieren que empatices rápidamente con que es algo "bien argentino", pero que de argentino tiene poco y nada.
-Lo que no encuentro mucha relación es con marcas como Johnny Walker, Maersk, etc.
+Lo que no encuentro mucha relación es con marcas como Johnny Walker, Maersk, más que la de Argentino Aspiracional.
