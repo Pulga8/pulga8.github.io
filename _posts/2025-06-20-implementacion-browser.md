@@ -9,6 +9,8 @@ tags: [Python, Chromium, PyQt5, Browser]
 author: Pulga
 ---
 
+![](/assets/img/notbyai-es.svg)
+
 {: .box-warning}
 Este es un posteo de aprendizaje y de prueba, no debe ser usado como guía técnica y puede estar sujeto a errores.
 
@@ -177,8 +179,6 @@ Existen varios motores: Gecko, Chromium, Quantum, SpiderMonkey, WebKit, etc. Me 
 
 Gracias a @Pachi y a @Snehasish-Konger por documentar y postear al respecto, tomé muchos de los aprendizajes de ahí, en particular quien me motivó a chusmear sobre esto fue el posteo que hizo @Pachi en mastodon, así que queda también citado en las referencias.
 
-
-![](/assets/img/notbyai-es.svg)
 
 Links de referencia:
 1. [Web explicativa de Snehasish-Konger](https://scientyficworld.org/how-to-build-a-browser-using-python/) (*recomiendo*)
