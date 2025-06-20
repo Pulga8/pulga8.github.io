@@ -178,6 +178,8 @@ Existen varios motores: Gecko, Chromium, Quantum, SpiderMonkey, WebKit, etc. Me 
 Gracias a @Pachi y a @Snehasish-Konger por documentar y postear al respecto, tomé muchos de los aprendizajes de ahí, en particular quien me motivó a chusmear sobre esto fue el posteo que hizo @Pachi en mastodon, así que queda también citado en las referencias.
 
 
+![](/assets/img/notbyai-es.svg)
+
 Links de referencia:
 1. [Web explicativa de Snehasish-Konger](https://scientyficworld.org/how-to-build-a-browser-using-python/) (*recomiendo*)
 2. [Repo de Snehasish-Konger](https://github.com/Snehasish-Konger/browser/)
