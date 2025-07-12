@@ -19,7 +19,7 @@ Este es un posteo de aprendizaje y de prueba, no debe ser usado como guía técn
 Todos los posteos que vi hacían referencia a "hacer un browser", no es tan así... un poco sí... pero no tanto.
 La idea es hacer una interfaz gráfica con PyQt5 de Python, y esa interfaz tiene una implementación del Chromium Engine, osea el motor de navegación de Chromium, de forma tal que a través de llamadas a métodos, estan facilitadas muchísimas cosas, y realmente uno sólo debe hacer eso, llamar a los métodos, luego se le puede implementar muchísima lógica, y usar esa estructura gráfica que provee PyQt5 para hacer un navegador mucho más desarrollado.
 
-## Comencemos
+## Comenzemos
 
 Primero debemos crear la ventana principal de la interfaz gráfica.
 Para eso está la clase QMainWindow de PyQt. Esta ventana tiene la posibilidad de agregar otras características que usaremos como QToolBar, esto es, una barra de herramientas. Y tiene más que no he utilizado como la QMenuBar, y la QStatusBar.
