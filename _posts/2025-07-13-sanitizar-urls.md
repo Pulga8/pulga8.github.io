@@ -15,7 +15,7 @@ Sanitizar URLs no es un consejo de privacidad propiamente, el fin de este post e
 
 # Qué es una URL?
 
-Bueno básica y sencillamente es una **dirección** tal como conocen, que al poner en el navegador, nos muestra una página web, imágen, etc. Viene del acrónimo de "Uniform Resource Locator", sí todo en inglés.
+Bueno básica y sencillamente es una **dirección** tal como conocen que, al poner en el navegador, nos muestra una página web, imágen, etc. Viene del acrónimo de "Uniform Resource Locator", sí todo en inglés.
 
 Por ejemplo: *www.google.com* es una **URL**. Y así todas las que se les ocurran.
 
@@ -53,7 +53,7 @@ ref=nav_cs_customerservice          --> (Código de seguimiento)
 ```
 
 Bueno hasta el separador **'?'** es el núcleo de la URL, esa es la parte clave, que nos lleva hasta el recurso que querramos, foto, página web, etc.
-Lo que sigue luego de ese separador, son todos parámetros extra que en muchos casos son de manejo propio de cada servicio. Por ejemplo Google Analytics, está incoporado en muchísimas de las páginas que visitamos, permite llevar un conteo de todo, cantidad de clicks en la página, locaciones desde donde se visita la página, etc. Para eso utiliza "trackers" osea "seguimientos" no sé cuál sería la perfecta traducción, básicamente te rastrea la navegación a través de ese pendorcho que te deja en la URL.
+Lo que sigue luego de ese separador, son todos parámetros extra que en muchos casos son de manejo propio de cada servicio. Por ejemplo Google Analytics, está incoporado en muchísimas de las páginas que visitamos, permite llevar un conteo de todo, cantidad de clicks en la página, locaciones desde donde se visita la página, etc. Para eso utiliza "trackers" osea "seguimientos" no sé cuál sería la perfecta traducción, básicamente te rastrea la navegación a través de ese *pendorcho* ("ese coso") que te deja en la URL.
 
 Los más conocidos son los [UTM(Urchin Tracking Module)](https://es.wikipedia.org/wiki/Par%C3%A1metros_UTM), "módulos de seguimiento Urchin".
 
