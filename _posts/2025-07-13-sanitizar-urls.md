@@ -117,7 +117,7 @@ youtube.com                         --> (Dominio)
 ?                                   --> (Separador)
 v=jYUZAF3ePFE                       --> (Que leches es esto?)
 ```
-Okay si borramos lo que sigue luego del separador **?**, nos quedaría sólo `https://www.youtube.com/watch` pueden probar acceder a ese link pero no va a nuestro video simplemente redirecciona a la página principal de yutu. Entonces? bueno acá podemos ver a qué me refería con el warning ése de más arriba, en este caso el `v=jYUZAF3ePFE` hace referencia al id (un código de identificación) de nuestreo video, pueden pensarlo como `video=jYUZAF3ePFE` entonces completando la ruta estaríamos diciendo *"Yutu quiero ver el video jYUZAF3ePFE"* algo así sería lo que se traduciría esa URL en formato de juego `youtube.com/watch?v=jYUZAF3ePFE`
+Okay si borramos lo que sigue luego del separador **?**, nos quedaría sólo `https://www.youtube.com/watch` pueden probar acceder a ese link pero no va a nuestro video simplemente redirecciona a la página principal de yutu. Entonces? bueno acá podemos ver a qué me refería con el warning ése de más arriba, en este caso el `v=jYUZAF3ePFE` hace referencia al id (un código de identificación) de nuestro video, pueden pensarlo como `video=jYUZAF3ePFE` entonces completando la ruta estaríamos diciendo *"Yutu quiero ver el video jYUZAF3ePFE"* algo así sería lo que se traduciría esa URL en formato de juego `youtube.com/watch?v=jYUZAF3ePFE`
 En este caso no hay nada que sanitizar.
 
 Veamos el botón de "Share/Compartir":
