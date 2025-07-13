@@ -8,6 +8,9 @@ tags: [Sanitizar, URL, ClearURL, Sanitize, Sanitization URL]
 author: Pulga
 ---
 
+{: .block-tip}
+Sanitizar URLs no es un consejo de privacidad propiamente, el fin de este post es concientizar sobre las URLs para un poco entender ¿qué son? y que dicha información nos permita diferenciar URLs falsas de originales, y identificar qué parte de la URL no es necesaria y es sólo para publicida.
+
 ![](/assets/img/notbyai-es.svg)
 
 # Qué es una URL?
