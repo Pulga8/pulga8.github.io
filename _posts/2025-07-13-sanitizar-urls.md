@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Sanitizar URLs
-subtitle: Qué son las URLs y como cuidar al compartir posts.
+subtitle: Qué son las URLs y cómo cuidar al compartir posts.
 thumbnail-img: /assets/img/ga4.png
 share-img: /assets/img/ga4.png
 tags: [Sanitizar, URL, ClearURL, Sanitize, Sanitization URL]
 author: Pulga
 ---
 
-{: .block-tip}
-Sanitizar URLs no es un consejo de privacidad propiamente, el fin de este post es concientizar sobre las URLs para un poco entender ¿qué son? y que dicha información nos permita diferenciar URLs falsas de originales, y identificar qué parte de la URL no es necesaria y es sólo para publicida.
+{: .box-success}
+Sanitizar URLs no es un consejo de privacidad propiamente, el fin de este post es concientizar sobre las URLs para un poco entender qué son y que dicha información nos permita diferenciar URLs falsas de originales, e identificar qué parte de la URL no es necesaria y es sólo para publicidad.
 
 ![](/assets/img/notbyai-es.svg)
 
