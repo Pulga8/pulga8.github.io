@@ -9,10 +9,10 @@ tags: [Python, Chromium, PyQt5, Browser]
 author: Pulga
 ---
 
-![](/assets/img/notbyai-es.svg)
-
 {: .box-warning}
 Este es un posteo de aprendizaje y de prueba, no debe ser usado como guía técnica y puede estar sujeto a errores.
+
+![](/assets/img/notbyai-es.svg)
 
 ## Implementando un navegador
 
