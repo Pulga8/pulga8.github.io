@@ -26,23 +26,23 @@ Recomendaciones vigentes a 26 de octubre de 2025
 > El siguiente posteo va dedicado a una reciente amiga Clara, que me motivó a seguir escribiendo.
 
 # Índice
-  - [Navegar por internet](#Navegar-por-internet)
-  - [Navegadores](#Navegadores)
-  - [Buscadores](#Buscadores)
-  - [Recomendaciones](#Recomendaciones)
-  - [Política](#Política)
-  - [Referencias](#Referencias)
+  - [Navegar por internet](#navegar-por-internet)
+  - [Navegadores](#navegadores)
+  - [Buscadores](#buscadores)
+  - [Recomendaciones](#recomendaciones)
+  - [Política](#politica)
+  - [Referencias](#referencias)
 
 Vamos a comenzar un poco "fuerte" en términos de contextos pero se irá aclarando durante la lectura.
 En caso de que quieras la versión corta ir directamente al apartado de **#Recomendaciones**.
 
 
-## Navegar por internet
+## Navegar por internet {#navegar-por-internet}
 
 Navegar por internet es cada día más complejo, por la misma [_"enshittification"_ o _"mierdificación"_](https://es.wikipedia.org/wiki/Decadencia_de_plataformas) que plantea Cory Doctorov, y por que los servicios son "gratis" bajo la venta de datos los cuales derivan en publicidad. En el medio está la puja entre todos para ver quien se queda con la atención del usuario, sea para venderle una estafa, o para venderle un producto real. Pero básicamente entrar a internet es como estar en la terminal de transporte o en un shopping, donde pasan vendedores de todo tipo constantemente, unos más atrevidos que otros. (Este ejemplo quizás sólo valga para latinos)
 
 
-## Navegadores
+## Navegadores {#navegadores}
 
 Vamos a lo nuestro, para poder viajar por internet debemos subirnos al colectivo que nos lleva, ése es nuestro navegador.
 El navegador nos va a permitir acceder y visualizar muchísimas páginas y sitios.
@@ -58,7 +58,7 @@ Algunos navegadores son:
 
 Bueno esos son algunos, hay montones, y derivados, no nos interesa conocer todos en este posteo. Cada uno tiene sus cosas y sus dueños. Pueden encontrar más información buscando en algún buscador "Comparativa de navegadores" y verán muchos cuadros y posteos al respecto. Si quieren frikiarla pueden chusmear la página de [test de privacidad](https://privacytests.org/). No porque sea más privado es mejor... recuerden que en el día a día hacemos un balanceo entre regalar datos para poder subsistir y entre cuidarnos de no regalar de más, etc.
 
-## Buscadores
+## Buscadores {#buscadores}
 
 Ahora sí, hablamos de utilizar un buscador recién... pero... no era de navegadores? Bueno resulta que los navegadores utilizan [motores de búsqueda](https://es.wikipedia.org/wiki/Motor_de_b%C3%BAsqueda), que son los que nos permiten encontrar cosas en internet... dado que es un mar de fuentes y posteos. Cada motor de búsqueda "indexa" distinto la información. Antes de hablar un poco más nombremos algunos motores de búsqueda de forma que sepamos de qué hablamos:
 * Google
@@ -99,7 +99,7 @@ En el caso de Chrome es un poco más complejo:
 
 > Cambiar motor de búsqueda del navegador Chrome.
 
-## Recomendaciones
+## Recomendaciones {#recomendaciones}
 
 Para poder navegar sin comerse todas las publicidades y carteles que se abren sólos, se utilizan "adblockers" osea **"bloqueadores de anuncios"**, recomiendo [uBlockOrigin](https://ublockorigin.com/), el cual es un complemento del navegador, que tiene muchas listas de sitios que están denunciados por spam, etc, de forma tal que filtra todo eso y evita que se abran o te sugiere no acceder a algunos. Además se pueden agregar filtros, desactivar o activar algunas funcionalidades extras, dado que a veces uno sí quiere que se abran algunos paneles, etc. Con esto no te vas a comer anuncios en yutube, evitas posibles clicks en cualquier lado, o que se te abran 34 pestañas sin que vos quieras, y ni hablar de no entrar en carteles falsos. Para no tener anuncios en yutube tmb hay un "youtube tuneado" que se llama [yewtu.be](https://yewtu.be/).
 
@@ -113,7 +113,7 @@ Hablando de Cookies... y lo último que menciono
 Los botones más faciles de clickear son "aceptar todo", pero si nos tomamos un ratito, siempre habrá un "gestionar ajustes", el cual nos permite no aceptar todo, de forma de evitarnos algunos trackeos, manejo de publicidad y que se nos acumulen cookies en el navegador.
 
 
-## Política
+## Política {#politica}
 
 Sobre todo esto, en profundidad con contexto y sobre todo el mercado que es realmente un buscador, escribe el grandísimo [Juan Brodersen en su newsletter Dark News](https://www.brodersendarknews.com/p/google-ads-monopolio-impacto-usuario). 
 Rescato una parte de la nota de Juan donde menciona lo siguiente:
@@ -134,7 +134,7 @@ Y ni hablar que en el caso **2.** los links patrocinados pueden ser links de "ph
 
 Y por último considerar gastos energéticos y de refrigeración que pueden realizar dichas tecnologías. Dado que una búsqueda ya de por sí puede llevar mucho cómputo, y sumándole la IA aumenta, y todo eso genera calor, como en la compu de tu casa, así que para eso se usa agua para refrigerar. Acá no hay mucha data precisa porque los gigantes tecnológicos no son muy transparentes. Dejo en las referencias el blog de "Tu Nube Seca Mi Río" quienes trabajan sobre estas temáticas.
 
-## Referencias
+## Referencias {#referencias}
 
 * [DarkNews](https://www.brodersendarknews.com/p/google-ads-monopolio-impacto-usuario)
 * [Información Falsa IA](https://www.brodersendarknews.com/p/desinformacion-chatbots-ia-chatgpt-gemini)
