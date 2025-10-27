@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Guía del viajero interredes
-subtitle: Algunos tips para navegar por internet sin regalarse o ser spameado.
+subtitle: Algunas recomendaciones para navegar por internet sin regalarse o ser spameado.
 thumbnail-img: /assets/img/viajero_intergalactico.jpg
 cover-img: /assets/img/viajero_intergalactico.jpg
 share-img: /assets/img/viajero_intergalactico.jpg
@@ -23,9 +23,19 @@ Recomendaciones vigentes a 26 de octubre de 2025
 
 ![](/assets/img/notbyai-es.svg)
 
-> El siguiente es un posteo dedicado a una reciente amiga Clara, que me motivó a seguir escribiendo.
+> El siguiente posteo va dedicado a una reciente amiga Clara, que me motivó a seguir escribiendo.
+
+# Índice
+  - [Navegar por internet](#Navegar-por-internet)
+  - [Navegadores](#Navegadores)
+  - [Buscadores](#Buscadores)
+  - [Recomendaciones](#Recomendaciones)
+  - [Política](#Política)
+  - [Referencias](#Referencias)
 
 Vamos a comenzar un poco "fuerte" en términos de contextos pero se irá aclarando durante la lectura.
+En caso de que quieras la versión corta ir directamente al apartado de **#Recomendaciones**.
+
 
 ## Navegar por internet
 
@@ -67,7 +77,7 @@ $$\frac{181.000.000.000.000 GB}{0.3 GB}\approx 603.333.333.333 \space biblioteca
 
 Por lo que ahora creo que podemos dimensionar lo complejo de buscar algo dentro de ese bolonqui de información.
 
-Seguimos... entonces uno puede usar el navegador X con el motor de búsqueda Y. Por defecto obviamente quienes sean de la misma empresa se recomiendan por defecto, como sea Chrome con Google. Pero cada motor va a ordenar los resultados de búsqueda de distintas formas.
+Seguimos... entonces uno puede usar el navegador X con el motor de búsqueda Y. Obviamente quienes sean de la misma empresa se recomiendan por defecto, como sea Chrome con Google. Pero cada motor va a ordenar los resultados de búsqueda de distintas formas.
 A eso se le suman, en el caso de gugel, los links patrocinados. Y a todos, los resultados generados por IA.
 
 Veamos un ejemplo de esto.
