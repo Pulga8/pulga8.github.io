@@ -14,11 +14,11 @@ author: Pulga
 > Un posteo con motivación para utilizar bloqueadores de anuncios, y algunos berres.
 
 {: .box-warning}
-La presente recomendación carece de efecto vinculante y opera como mero aviso o consejo.
+La presente recomendación **carece de efecto vinculante** y opera como **mero aviso o consejo**.
 
 
 {: .box-success}
-Recomendaciones vigentes a 26 de octubre de 2025
+**Recomendaciones vigentes a 26 de octubre de 2025**
 
 
 ![](/assets/img/notbyai-es.svg)
@@ -34,7 +34,7 @@ Recomendaciones vigentes a 26 de octubre de 2025
   - [Referencias](#referencias)
 
 Vamos a comenzar un poco "fuerte" en términos de contextos pero se irá aclarando durante la lectura.
-En caso de que quieras la versión corta ir directamente al apartado de **#Recomendaciones**.
+En caso de que quieras la versión corta ir directamente al apartado de **Recomendaciones**.
 
 
 ## Navegar por internet {#navegar-por-internet}
@@ -101,16 +101,16 @@ En el caso de Chrome es un poco más complejo:
 
 ## Recomendaciones {#recomendaciones}
 
-Para poder navegar sin comerse todas las publicidades y carteles que se abren sólos, se utilizan "adblockers" osea **"bloqueadores de anuncios"**, recomiendo [uBlockOrigin](https://ublockorigin.com/), el cual es un complemento del navegador, que tiene muchas listas de sitios que están denunciados por spam, etc, de forma tal que filtra todo eso y evita que se abran o te sugiere no acceder a algunos. Además se pueden agregar filtros, desactivar o activar algunas funcionalidades extras, dado que a veces uno sí quiere que se abran algunos paneles, etc. Con esto no te vas a comer anuncios en yutube, evitas posibles clicks en cualquier lado, o que se te abran 34 pestañas sin que vos quieras, y ni hablar de no entrar en carteles falsos. Para no tener anuncios en yutube tmb hay un "youtube tuneado" que se llama [yewtu.be](https://yewtu.be/), también existen cosas como [New Pipe](https://newpipe.net/) que andan muy bien y todo un mundillo.
+Para poder navegar sin comerse todas las publicidades y carteles que se abren sólos, se utilizan "adblockers" osea **"bloqueadores de anuncios"**, recomiendo **[uBlockOrigin](https://ublockorigin.com/)**, el cual es un complemento del navegador, que tiene muchas listas de sitios que están denunciados por spam, etc, de forma tal que filtra todo eso y evita que se abran o te sugiere no acceder a algunos. Además se pueden agregar filtros, desactivar o activar algunas funcionalidades extras, dado que a veces uno sí quiere que se abran algunos paneles, etc. Con esto no te vas a comer anuncios en yutube, evitas posibles clicks en cualquier lado, o que se te abran 34 pestañas sin que vos quieras, y ni hablar de no entrar en carteles falsos. Para no tener anuncios en yutube tmb hay un "youtube tuneado" que se llama **[yewtu.be](https://yewtu.be/)**, también existen cosas como **[NewPipe](https://newpipe.net/)** que andan muy bien y todo un mundillo.
 
-Luego para "privacidad" está [Privacy Badger](https://privacybadger.org/#What-is-Privacy-Badger) el cual va a evitar que nos "rastreen" las páginas que visitamos... esto como sucede? bueno... cuando le damos a "aceptar todas las cookies" ahí nos guardan "galletitas/cookies" en nuestro navegador, y se puede ir siguiendo la navegación, esto permite realizar una publicidad más personalizada, etc.
+Luego para **"privacidad"** está **[Privacy Badger](https://privacybadger.org/#What-is-Privacy-Badger)** el cual va a evitar que nos **"rastreen"** las páginas que visitamos... esto como sucede? bueno... cuando le damos a **"aceptar todas las cookies"** ahí nos guardan **"galletitas/cookies"** en nuestro navegador, y se puede ir siguiendo la navegación, esto permite realizar una publicidad más personalizada, etc.
 
 Hablando de Cookies... y lo último que menciono
 
 ![Cartel de cookies de la página de F1](/assets/img/cookie_F1.png)
 
 
-Los botones más faciles de clickear son "aceptar todo", pero si nos tomamos un ratito, siempre habrá un "gestionar ajustes", el cual nos permite no aceptar todo, de forma de evitarnos algunos trackeos, manejo de publicidad y que se nos acumulen cookies en el navegador.
+Los botones más faciles de clickear son **"aceptar todo"**, pero si nos tomamos un ratito, siempre habrá un **"gestionar ajustes"**, el cual nos permite **no aceptar todo**, de forma de evitarnos algunos trackeos, manejo de publicidad y que se nos acumulen cookies en el navegador.
 
 
 ## Política {#politica}
@@ -118,17 +118,17 @@ Los botones más faciles de clickear son "aceptar todo", pero si nos tomamos un 
 Sobre todo esto, en profundidad con contexto y sobre todo el mercado que es realmente un buscador, escribe el grandísimo [Juan Brodersen en su newsletter Dark News](https://www.brodersendarknews.com/p/google-ads-monopolio-impacto-usuario). 
 Rescato una parte de la nota de Juan donde menciona lo siguiente:
 
-> _"...Y no es menor el ataque a esta parte del negocio de Alphabet, empresa matriz de Google: es el core de su modelo. De los casi 320.000 millones de dólares en ingresos anuales de Alphabet en 2024, más de 250.000 millones vinieron de publicidad._
-_En total, alrededor del 78% de los ingresos totales de Alphabet ese año provinieron del negocio publicitario, entre Google Search (búsqueda), avisos en YouTube y los anuncios de terceros a través de AdSense y Ad Manager."_
+> _"...Y no es menor el ataque a esta parte del negocio de Alphabet, empresa matriz de Google: es el core de su modelo. De los casi **320.000 millones de dólares** en ingresos anuales de Alphabet en 2024, más de **250.000 millones** vinieron de publicidad._
+> _En total, alrededor del **78%** de los ingresos totales de Alphabet ese año provinieron del negocio publicitario, entre Google Search (búsqueda), avisos en YouTube y los anuncios de terceros a través de AdSense y Ad Manager."_
 
-Además lo que es curioso es que los anuncios se venden en el Ad exchange de Google Ad Manager, por lo que Gugel es vendedor y comprador. Por eso es que ha sido acusado de monopólico.
+Además lo que es curioso es que los anuncios se venden en el Ad exchange de Google Ad Manager, por lo que **Gugel** es vendedor y comprador. Por eso es que ha sido acusado de **monopólico**.
 
 De esta forma podemos visualizar porqué es tan importante un buscador, porqué son tan densos con meter cookies y con que aceptes todas sus políticas de cookies.
 
-Además los chatbots de IA han duplicado la información falsa, y muchos de los usuarios nos sentimos satisfechos con nuestra búsqueda cuando nos responde un chatbot... el cual... alucina... entonces ahora es un doble trabajo el de chequear:
-1. Que el chatbot no alucine.
-2. Que los links no sean links que están arriba por patrocinio, osea pagos.
-3. Que los links que mayor ponderen tengan buena información.
+Además los **chatbots de IA** han duplicado la información falsa, y muchos de los usuarios nos sentimos satisfechos con nuestra búsqueda cuando nos responde un chatbot... el cual... alucina... entonces ahora es un doble trabajo el de chequear:
+1. **Que el chatbot no alucine.**
+2. **Que los links no sean links que están arriba por patrocinio (pagos).**
+3. **Que los links que mayor ponderen tengan buena información.**
 
 Y ni hablar que en el caso **2.** los links patrocinados pueden ser links de "phishing" osea "estafas", esto es mencionado por Juan en la charla citada en las referencias en el minuto 31:56.
 
@@ -136,7 +136,7 @@ Y por último considerar gastos energéticos y de refrigeración que pueden real
 
 ## Referencias {#referencias}
 
-* [DarkNews](https://www.brodersendarknews.com/p/google-ads-monopolio-impacto-usuario)
-* [Información Falsa IA](https://www.brodersendarknews.com/p/desinformacion-chatbots-ia-chatgpt-gemini)
-* [Cyberseguridad y Periodismo - Charla Juan Brodersen](https://youtu.be/qS3J1QigqFo)
-* [Tu Nube Seca Mi Río](https://tunubesecamirio.com/)
+* **[DarkNews](https://www.brodersendarknews.com/p/google-ads-monopolio-impacto-usuario)**
+* **[Información Falsa IA](https://www.brodersendarknews.com/p/desinformacion-chatbots-ia-chatgpt-gemini)**
+* **[Cyberseguridad y Periodismo - Charla Juan Brodersen](https://youtu.be/qS3J1QigqFo)**
+* **[Tu Nube Seca Mi Río](https://tunubesecamirio.com/)**
