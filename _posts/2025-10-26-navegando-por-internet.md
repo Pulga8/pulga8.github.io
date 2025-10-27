@@ -3,6 +3,7 @@ layout: post
 title: Guía del viajero interredes
 subtitle: Algunos tips para navegar por internet sin regalarse o ser spameado.
 thumbnail-img: /assets/img/viajero_intergalactico.jpg
+cover-img: /assets/img/viajero_intergalactico.jpg
 share-img: /assets/img/viajero_intergalactico.jpg
 tags: [AdBlocks, PrivacyManager, ClearURL, URL]
 mathjax: true
@@ -10,23 +11,28 @@ author: Pulga
 ---
 
 
-> El siguiente es un posteo dedicado a una reciente amiga Clara, que me motivó a seguir escribiendo.
-
+> Un posteo con motivación para utilizar bloqueadores de anuncios, y algunos berres.
 
 {: .box-warning}
 La presente recomendación carece de efecto vinculante y opera como mero aviso o consejo.
 
 
-{: .box-info}
+{: .box-success}
 Recomendaciones vigentes a 26 de octubre de 2025
 
 
 ![](/assets/img/notbyai-es.svg)
 
+> El siguiente es un posteo dedicado a una reciente amiga Clara, que me motivó a seguir escribiendo.
+
 Vamos a comenzar un poco "fuerte" en términos de contextos pero se irá aclarando durante la lectura.
+
+## Navegar por internet
 
 Navegar por internet es cada día más complejo, por la misma [_"enshittification"_ o _"mierdificación"_](https://es.wikipedia.org/wiki/Decadencia_de_plataformas) que plantea Cory Doctorov, y por que los servicios son "gratis" bajo la venta de datos los cuales derivan en publicidad. En el medio está la puja entre todos para ver quien se queda con la atención del usuario, sea para venderle una estafa, o para venderle un producto real. Pero básicamente entrar a internet es como estar en la terminal de transporte o en un shopping, donde pasan vendedores de todo tipo constantemente, unos más atrevidos que otros. (Este ejemplo quizás sólo valga para latinos)
 
+
+## Navegadores
 
 Vamos a lo nuestro, para poder viajar por internet debemos subirnos al colectivo que nos lleva, ése es nuestro navegador.
 El navegador nos va a permitir acceder y visualizar muchísimas páginas y sitios.
@@ -42,6 +48,8 @@ Algunos navegadores son:
 
 Bueno esos son algunos, hay montones, y derivados, no nos interesa conocer todos en este posteo. Cada uno tiene sus cosas y sus dueños. Pueden encontrar más información buscando en algún buscador "Comparativa de navegadores" y verán muchos cuadros y posteos al respecto. Si quieren frikiarla pueden chusmear la página de [test de privacidad](https://privacytests.org/). No porque sea más privado es mejor... recuerden que en el día a día hacemos un balanceo entre regalar datos para poder subsistir y entre cuidarnos de no regalar de más, etc.
 
+## Buscadores
+
 Ahora sí, hablamos de utilizar un buscador recién... pero... no era de navegadores? Bueno resulta que los navegadores utilizan [motores de búsqueda](https://es.wikipedia.org/wiki/Motor_de_b%C3%BAsqueda), que son los que nos permiten encontrar cosas en internet... dado que es un mar de fuentes y posteos. Cada motor de búsqueda "indexa" distinto la información. Antes de hablar un poco más nombremos algunos motores de búsqueda de forma que sepamos de qué hablamos:
 * Google
 * Bing
@@ -49,7 +57,7 @@ Ahora sí, hablamos de utilizar un buscador recién... pero... no era de navegad
 * Yahoo
 * Brave Search
 
-Y hay muchos más, organizar la información fue|es un problema muy grande, imagínense una biblioteca del tamaño de internet... la biblioteca de Alejandría tenía aprox 100.000 libros, actualmente se estima que internet es de 181 zettabytes (181 mil millones de terabytes)
+Y hay muchos más, organizar la información fue/es un problema muy grande. Imagínense una biblioteca del tamaño de internet... la biblioteca de Alejandría tenía aprox 100.000 libros, actualmente se estima que internet es de 181 zettabytes (181 mil millones de terabytes)
 
 Supongamos que un libro promedio digitalizado debe estar en 3MB, de forma tal que la biblioteca de Alejandría con 100.000 libros serían 300.000MB equivalentes a 300GB.
 
