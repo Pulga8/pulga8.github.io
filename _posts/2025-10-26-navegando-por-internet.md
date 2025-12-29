@@ -140,3 +140,4 @@ Y por último considerar gastos energéticos y de refrigeración que pueden real
 * **[Información Falsa IA](https://www.brodersendarknews.com/p/desinformacion-chatbots-ia-chatgpt-gemini)**
 * **[Cyberseguridad y Periodismo - Charla Juan Brodersen](https://youtu.be/qS3J1QigqFo)**
 * **[Tu Nube Seca Mi Río](https://tunubesecamirio.com/)**
+* **[Por Qué es Importante la Privacidad](https://www.privacyguides.org/es/basics/why-privacy-matters/#que-es-la-privacidad)**
