@@ -31,6 +31,10 @@ Este es un posteo de aprendizaje y de prueba, no debe ser usado como guía técn
 
 ![](/assets/img/notbyai-es.svg)
 
+## TL;DR
+
+La IA es una función probabilística que procesa información en etapas: primero tokeniza y convierte palabras en vectores numéricos (embeddings), luego usa "Self Attention" para identificar relaciones entre palabras considerando el contexto, y finalmente genera respuestas. Los LLMs como ChatGPT son modelos decoder-only que funcionan calculando qué palabra es más probable que siga, basándose en patrones aprendidos durante el entrenamiento. Es matemática compleja a una velocidad bestial con una galaxia de datos.
+
 ## IA
 
 Arranquemos, la IA se llama así "inteligencia artificial" por una cuestión filosófica donde para no ligarla a la inteligencia humana, le pusieron artificial. (Entiéndase esto escrito de forma burda y expres, hay muchísimo de porqué se llama así y de si está bien o no, y demás debate) Pero por más que haga cosas increíbles sigue siendo una enorme función probabilística que realiza millones de cálculos en poquísimo tiempo generando texto, imágenes, o videos, que parecieran "reales" por una cuestión de que son construcciones realizadas en base a lo más probable.
@@ -73,7 +77,6 @@ Dentro de las ANI podemos dividirlas dependiendo como se las "entrene":
 * Semi-supervised
 * Reinforcement learning
 
-> No sabemos aún qué es entrenar pero bueno, ya lo veremos más adelante.
 </div>
 </details>
 
@@ -82,7 +85,9 @@ Dentro de las ANI podemos dividirlas dependiendo como se las "entrene":
 ![Historia de la IA](/assets/img/historia_ia.jpg)
 > Imagen tomada del curso "How Transformer LLMs Work" - Jay Alammar, DeepLearning.ai
 
-Donde podemos ver distintos tipos de LLMs.
+Esta imagen ilustra la evolución de una tecnología, desde ideas como "Bag-of-Words" Bolsa de palabras, "Word2Vec" Palabras a vectores, hasta lo popularmente conocido ChatGPT. Nótese el quibre de 2017, donde dice "Attention", esa fecha fue la publicación de un paper que cambió el paradigma del Deep Learning, paper llamado "Attention its all you need", que está citado en las referencias de este post.
+
+En la imágen se pueden observar distintos tipos de LLMs.
 * Decoder-only (GPT)
 * Encoder-only (BERT)
 * Encoder-Decoder (T5)
@@ -97,48 +102,58 @@ Donde podemos ver distintos tipos de LLMs.
 </div>
 </details>
 
-Estas diferencias de "Sólo Decodificador", "Sólo Codificador" y "Ambos", son diferencias de **Arquitectura**, osea cómo fueron construidos. *Retomaremos esto más adelante*.
+Estas diferencias de "Sólo Decodificador", "Sólo Codificador" y "Ambos", son diferencias de **Arquitectura**, osea cómo fueron construidos.
 
 ![Arquitecturas de tranformers, encoder-only, decoder-only y encoder-decoder](/assets/img/tranformers_arq.png)
 > Fuente: [DailyLifeAi](https://daily-life-ai.com/251/)
 
-Por lo tanto podemos ver que son parecidas en algunas cosas pero claramente distintas, y una parece una unión de las otras.
+Se pueden observar similitudes entre arquitecturas, pero son diferentes, en el post trabajaremos con la llamada Decoder-only, por lo que pueden observar sus partes que luego desglosaremos.
 
 ## Vamos a lo nuestro
 
-Hay una rama dentro de la IA que es llamada Machine Learning (Aprendizaje Automático), dentro de esta rama se encuentra otra rama llamada Deep Learning (Aprendizaje Profundo), y dentro del Deep Learning está la IA Generativa, que es la que utilizamos.
+La IA es un área muy abarcativa aunque al día de hoy se asocie sólamente a ChatGPT. Hay una rama dentro de la IA que es llamada Machine Learning (Aprendizaje Automático), dentro de esta rama se encuentra otra rama llamada Deep Learning (Aprendizaje Profundo), y dentro del Deep Learning está la IA Generativa, que es la que utilizamos. (ChatGPT, Claude, DeepSeek, etc).
 
 ANI → Machine Learning → Deep Learning → Generative AI.
 
 > No todo el machine learning es generativo, no todo deep learning es generativo. **La Ia generativa es un tipo de modelos de Deep Learning.**
 
-Lo que más usamos son LLMs, grandes modelos de lenguaje, tales como Claude, ChatGPT, que son un tipo de IA Generativa. Al decir LLM hacemos referencia a lo que se llama "modelo". ChatGPT y Claude son más que sólo un modelo, porque son aplicaciones, dentro de ellas podés elegir distintos modelos, y hacer más cosas.
+Por ejemplo las traducciones, los sistemas de recomendación de compras, o películas, son parte de la IA, pero no es IA generativa.
+Lo que más usamos son LLMs "Large Language Model", grandes modelos de lenguaje, reitero: tales como ChatGPT, Claude, DeepSeek, etc, que son un tipo de IA Generativa. Cuando hablamos de LLMs hacemos referencia a lo que se llama "modelo". ChatGPT, Claude, DeepSeek, etc, son más que sólo un modelo porque son aplicaciones, dentro de ellas podés elegir distintos modelos y hacer más cosas, ustedes que los usan sabrán mejor que yo.
+
 
 Se puso jodido el post pero es complejo comentar estas cosas, y además peco de poner cosas "simplificadas" con cosas "complejas" haciendo un posteo generalista.
 
-Analizaremos sobre un LLM GPT (Generative Pre-Training), osea un modelo de IA Generativa que es decoder-only, dado que citaremos una [página](https://bbycroft.net/llm) que está muy linda, que permite ver uno paso a paso.
+Basaremos el post analizando sobre un LLM GPT (Generative Pre-Training), osea un modelo de IA Generativa que es decoder-only, dado que citaremos una [página](https://bbycroft.net/llm) que está muy linda, que permite ver uno de estos modelos paso a paso.
 
 | Arquitectura Decoder-only | Arquitectura NanoGPT |
 |---|---|
 | ![Transformer Decoder-only](/assets/img/decoder_only.png) Fuente: [DailyLifeAi](https://daily-life-ai.com/251/) | ![NanoGPT](/assets/img/nano_gpt.png) Fuente: LLM Visualization|
 
-> Observemos que la web nos muestra exactamente un decoder-only, donde en la imagen de la izquierda se inicia desde abajo, y en la de la derecha se inicia desde arriba, está la diferencia del Multi-Head Attention, antes de la etapa de FeedForward, pero debe ser alguna modificación de optimización de NanoGPT.
+> En la web propuesta se observa un decoder-only con alguna que otra variación respecto a la arquitectura estándar que está a la izquierda en la imágen. Quizás para ubicarse visualizar las "Add & Norm" que son las mismas que las "layer norm" en color amarillo.
 
-Por lo que podemos ver que nuestro posteo será hablar de sus etapas:
+Por lo que el posteo será hablar de sus etapas, o capas:
 
 1. Tokenizer/Embedding
-2. Normalización
-3. Self Attention
-4. MLP
-5. Softmax
-6. Output
+2. Self Attention
+3. MLP/ FeedForward
+4. Output
+
+Hay otras capas adicionales que se utilizan:
+* Normalización (Layer Normalization)
+* Conexión Residual (Residual)
+* Linear
+* Softmax
+
+Estas capas no las explicaremos dado que son bastante teóricas y relacionadas fuertemente con aritmética de computadoras y probabilidad.
 
 
 ### Lo primero: Tokenizer/ Embedding
 
 La máquina no entiende como nosotros, por lo que para "entender" necesitamos partir el texto ingresado. Cada "IA" parte el texto en distintas formas. Pueden jugar ingresando distintos textos en el [Tokenizer de OpenAI](https://platform.openai.com/tokenizer) y ver cómo se "tokeniza"/"recorta" dependiendo el modelo.
 
-Por ej:
+Usaremos la traducción a la frase de Batty: *"Quite an experience to live in fear, isn't it? That's what it is to be a slave."*
+
+Cuya traducción un poco a mi forma aprox: *"Es una locura vivir con miedo, no? Eso es ser esclavo".*
 
 | Modelo | Tokenización |
 |--------|--------------|
@@ -146,7 +161,7 @@ Por ej:
 | GPT-3 | ![Tokenizador con la frase "Es una locura vivir con miedo, ¿no? Eso es ser esclavo."](/assets/img/tokenizer_2.png) |
 
 
-{: .block-tip}
+{:.block-tip}
 Así es, a partir de ahora introducimos el concepto de **tokens** que son las divisiones que hará cada modelo para poder "entender" nuestras frases. En criollo recortes de nuestra frase.
 
 <details>
@@ -222,13 +237,9 @@ En esta imagen podemos ver como palabras como "sea" (mar) y "ocean" (océano) ti
 {: .block-tip}
 Ahora ya sabemos que los "Embeddings" son los tokens vectorizados, osea los tokens convertidos en vectores de números, que nos permiten capturan la información semántica y sintáctica de las palabras que representan.
 
-### Normalización
-
-Hasta el punto anterior, tokenizamos y generamos embeddings. Esta etapa toma el Input Embedding y le hace "cositas". Los va a "normalizar". Acá creo que podemos abstraernos fuertemente y decir que esta etapa nos ayuda a brindarle estabilidad al modelo, porque es bastante probabilístico lo que hace. Está fuertemente vinculado al álgebra detrás de estos modelos, lo hablaremos en un post aparte y más técnico. Al igual que la etapa de "projection" que fue sacada, esta etapa no es necesario entenderla, y la dejo sólo para mencionar esto de que existe pero no la hablaremos.
-
 ### Self Attention
 
-Esta parte es donde se trata de identificar que relación hay entre cada palabra, por ello es un cálculo de cuánto afecta la representación de un embedding contra todos los otros embeddings.
+Esta parte es donde se trata de identificar que relación hay entre cada palabra, por ello es un cálculo de cuánto afecta la representación de un embedding contra todos los otros embeddings. Permite capturar significados y relaciones entre tokens. A esto se le suele sumar **Multi-Head Attention**, lo cual son varias "cabezas de atención" lo que sería comparable con la idea de prestarle atención a dsitintas partes de la frase, con la aplicación de la multicabeza se puede prestar atención a más patrones, y por ejemplo a dos frases separadas, etc.
 
 Vamos a tomar el ejemplo de Santiago Fiorino:
 
@@ -261,21 +272,30 @@ $$Attention(Q,K,V)=softmax(\frac{QK^T}{\sqrt{d_k}})V$$
 
 ![Pasos](/assets/img/pasos.png)
 
+
+Gracias por leer el post, espero que haya aclarado un poco más esto de los LLMs, y algunas cosas de la IA. Se irán agregando posteos para profundizar en distintos aspectos mencionados en el post. Recomiendo fuertemente las referencias, en particular los links que son interactivos como:
+* Transformers Explainer
+* Generative AI exists because of the transformer
+* LLM Visualization
+* Interactive Variational Autoencoder
+
 ## Referencias
 
-[Introducción a la IA Generativa](https://postfuturear.substack.com/p/gen-ia-lidad-3-una-introduccion-a)
-[Generative AI exists because of the transformer](https://ig.ft.com/generative-ai/)
-[LLM Course](https://huggingface.co/learn/llm-course/chapter1/6)
-[LLM Visualization](https://bbycroft.net/llm)
-[Understanding Tokenization: Breaking Down Language for AI systems](https://www.anyoneai.com/blog/understanding-tokenization-breaking-down-language-for-ai-systems)
-[How are Large Language Models trained? A step-by-step guide to LLM training](https://www.anyoneai.com/blog/how-are-large-language-models-trained-a-step-by-step-guide-to-llm-training)
-[Interactive Variational Autoencoder](https://robz.github.io/mnist-vae/)
-[Deep Learning](https://en.wikipedia.org/wiki/Deep_learning)
-[Weak artificial intelligence](https://en.wikipedia.org/wiki/Weak_artificial_intelligence)
-[Tokenizer OpenAI](https://platform.openai.com/tokenizer)
-[Curso de LLMs de Hugging Face](https://huggingface.co/learn/llm-course/es/chapter2/4)
-[Improving Language Understanding by Generative Pre-Training](https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf)
-[GPT](https://huggingface.co/docs/transformers/model_doc/openai-gpt)
-[BERT](https://huggingface.co/docs/transformers/model_doc/bert)
-[Attention Is All You Need](arxiv.org/pdf/1706.03762)
-
+- [Introducción a la IA Generativa](https://postfuturear.substack.com/p/gen-ia-lidad-3-una-introduccion-a)
+- [Generative AI exists because of the transformer](https://ig.ft.com/generative-ai/)
+- [LLM Course - Hugging Face](https://huggingface.co/learn/llm-course/chapter1/6)
+- [LLM Visualization](https://bbycroft.net/llm)
+- [Understanding Tokenization: Breaking Down Language for AI systems](https://www.anyoneai.com/blog/understanding-tokenization-breaking-down-language-for-ai-systems)
+- [How are Large Language Models trained? A step-by-step guide to LLM training](https://www.anyoneai.com/blog/how-are-large-language-models-trained-a-step-by-step-guide-to-llm-training)
+- [Interactive Variational Autoencoder](https://robz.github.io/mnist-vae/)
+- [Deep Learning - Wikipedia](https://en.wikipedia.org/wiki/Deep_learning)
+- [Weak artificial intelligence - Wikipedia](https://en.wikipedia.org/wiki/Weak_artificial_intelligence)
+- [Tokenizer - OpenAI](https://platform.openai.com/tokenizer)
+- [Curso de LLMs de Hugging Face](https://huggingface.co/learn/llm-course/es/chapter2/4)
+- [Improving Language Understanding by Generative Pre-Training](https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf)
+- [GPT - Hugging Face Docs](https://huggingface.co/docs/transformers/model_doc/openai-gpt)
+- [BERT - Hugging Face Docs](https://huggingface.co/docs/transformers/model_doc/bert)
+- [Attention Is All You Need](https://arxiv.org/pdf/1706.03762)
+- [Transformers Explainer](https://poloclub.github.io/transformer-explainer/)
+- [Blade Runner - Tears in the rain](https://youtu.be/HU7Ga7qTLDU)
+- [Interactive Learning of Text-Generative Models - Paper](https://arxiv.org/pdf/2408.04619)
