@@ -24,7 +24,7 @@ reading_time:
 author: Pulga
 ---
 
-> Trataremos de desmenuzar chuncanamente algunos conceptos de la IA. No por ello es un posteo liviano, de hecho es largo, pero espero que quien lo lea se lleve una visión un poco más iluminada de la caja negra que es la IA.
+> Trataremos de desmenuzar chuncanamente algunos conceptos de la **IA**. No por ello es un posteo liviano, de hecho es largo, pero espero que quien lo lea se lleve una visión un poco más iluminada de la caja negra que es la IA.
 
 {: .box-warning}
 Este es un posteo de aprendizaje y de prueba, no debe ser usado como guía técnica y puede estar sujeto a errores. Es un posteo generalista por lo que muchos conceptos pueden no ser del todo correctos, dado el recorte realizado para poder leerse en un sólo post y con intención de que sea legible para cualquiera.
@@ -33,11 +33,11 @@ Este es un posteo de aprendizaje y de prueba, no debe ser usado como guía técn
 
 ## TL;DR
 
-La IA es una función probabilística que procesa información en etapas: primero tokeniza y convierte palabras en vectores numéricos (embeddings), luego usa "Self Attention" para identificar relaciones entre palabras considerando el contexto, y finalmente genera respuestas. Los LLMs como ChatGPT son modelos decoder-only que funcionan calculando qué palabra es más probable que siga, basándose en patrones aprendidos durante el entrenamiento. Es matemática compleja a una velocidad bestial con una galaxia de datos.
+La **IA** es una **función probabilística** que procesa información en etapas: primero **tokeniza** y convierte palabras en **vectores numéricos (embeddings)**, luego usa **Self Attention** para identificar relaciones entre palabras considerando el contexto, y finalmente genera respuestas. Los **LLMs** como ChatGPT son modelos **decoder-only** que funcionan calculando qué palabra es más probable que siga, basándose en patrones aprendidos durante el entrenamiento. Es matemática compleja a una velocidad bestial con una galaxia de datos.
 
 ## IA
 
-Arranquemos, la IA se llama así "inteligencia artificial" por una cuestión filosófica donde para no ligarla a la inteligencia humana, le pusieron artificial. (Entiéndase esto escrito de forma burda y expres, hay muchísimo de porqué se llama así y de si está bien o no, y demás debate) Pero por más que haga cosas increíbles sigue siendo una enorme función probabilística que realiza millones de cálculos en poquísimo tiempo generando texto, imágenes, o videos, que parecieran "reales" por una cuestión de que son construcciones realizadas en base a lo más probable.
+Arranquemos, la **IA** se llama así "**inteligencia artificial**" por una cuestión filosófica donde para no ligarla a la inteligencia humana, le pusieron artificial. (Entiéndase esto escrito de forma burda y expres, hay muchísimo de porqué se llama así y de si está bien o no, y demás debate) Pero por más que haga cosas increíbles sigue siendo una enorme **función probabilística** que realiza millones de cálculos en poquísimo tiempo generando texto, imágenes, o videos, que parecieran "reales" por una cuestión de que son construcciones realizadas en base a lo más probable.
 
 Tenemos 3 tipos de "IA":
 
@@ -85,20 +85,20 @@ Dentro de las ANI podemos dividirlas dependiendo como se las "entrene":
 ![Historia de la IA](/assets/img/historia_ia.jpg)
 > Imagen tomada del curso "How Transformer LLMs Work" - Jay Alammar, DeepLearning.ai
 
-Esta imagen ilustra la evolución de una tecnología, desde ideas como "Bag-of-Words" Bolsa de palabras, "Word2Vec" Palabras a vectores, hasta lo popularmente conocido ChatGPT. Nótese el quibre de 2017, donde dice "Attention", esa fecha fue la publicación de un paper que cambió el paradigma del Deep Learning, paper llamado "Attention its all you need", que está citado en las referencias de este post.
+Esta imagen ilustra la evolución de una tecnología, desde ideas como **Bag-of-Words** Bolsa de palabras, **Word2Vec** Palabras a vectores, hasta lo popularmente conocido ChatGPT. Nótese el quibre de 2017, donde dice **Attention**, esa fecha fue la publicación de un paper que cambió el paradigma del Deep Learning, paper llamado "Attention its all you need", que está citado en las referencias de este post.
 
 En la imágen se pueden observar distintos tipos de LLMs.
-* Decoder-only (GPT)
-* Encoder-only (BERT)
-* Encoder-Decoder (T5)
+* **Decoder-only (GPT)**
+* **Encoder-only (BERT)**
+* **Encoder-Decoder (T5)**
 
 <details>
 <summary>Otra forma de clasificarlos según su arquitectura</summary>
 <div markdown="1">
 
-* Auto-regressive (GPT)
-* Auto-encoding (BERT)
-* Sequence-to-sequence (T5)
+* **Auto-regressive (GPT)**
+* **Auto-encoding (BERT)**
+* **Sequence-to-sequence (T5)**
 </div>
 </details>
 
@@ -111,19 +111,19 @@ Se pueden observar similitudes entre arquitecturas, pero son diferentes, en el p
 
 ## Vamos a lo nuestro
 
-La IA es un área muy abarcativa aunque al día de hoy se asocie sólamente a ChatGPT. Hay una rama dentro de la IA que es llamada Machine Learning (Aprendizaje Automático), dentro de esta rama se encuentra otra rama llamada Deep Learning (Aprendizaje Profundo), y dentro del Deep Learning está la IA Generativa, que es la que utilizamos. (ChatGPT, Claude, DeepSeek, etc).
+La IA es un área muy abarcativa aunque al día de hoy se asocie sólamente a ChatGPT. Hay una rama dentro de la IA que es llamada **Machine Learning** (Aprendizaje Automático), dentro de esta rama se encuentra otra rama llamada **Deep Learning** (Aprendizaje Profundo), y dentro del Deep Learning está la **IA Generativa**, que es la que utilizamos. (ChatGPT, Claude, DeepSeek, etc).
 
-ANI → Machine Learning → Deep Learning → Generative AI.
+ANI → **Machine Learning** → **Deep Learning** → **Generative AI**.
 
-> No todo el machine learning es generativo, no todo deep learning es generativo. **La Ia generativa es un tipo de modelos de Deep Learning.**
+> No todo el machine learning es generativo, no todo deep learning es generativo. **La IA generativa es un tipo de modelos de Deep Learning.**
 
 Por ejemplo las traducciones, los sistemas de recomendación de compras, o películas, son parte de la IA, pero no es IA generativa.
-Lo que más usamos son LLMs "Large Language Model", grandes modelos de lenguaje, reitero: tales como ChatGPT, Claude, DeepSeek, etc, que son un tipo de IA Generativa. Cuando hablamos de LLMs hacemos referencia a lo que se llama "modelo". ChatGPT, Claude, DeepSeek, etc, son más que sólo un modelo porque son aplicaciones, dentro de ellas podés elegir distintos modelos y hacer más cosas, ustedes que los usan sabrán mejor que yo.
+Lo que más usamos son **LLMs** "Large Language Model", grandes modelos de lenguaje, reitero: tales como ChatGPT, Claude, DeepSeek, etc, que son un tipo de **IA Generativa**. Cuando hablamos de LLMs hacemos referencia a lo que se llama "modelo". ChatGPT, Claude, DeepSeek, etc, son más que sólo un modelo porque son aplicaciones, dentro de ellas podés elegir distintos modelos y hacer más cosas, ustedes que los usan sabrán mejor que yo.
 
 
 Se puso jodido el post pero es complejo comentar estas cosas, y además peco de poner cosas "simplificadas" con cosas "complejas" haciendo un posteo generalista.
 
-Basaremos el post analizando sobre un LLM GPT (Generative Pre-Training), osea un modelo de IA Generativa que es decoder-only, dado que citaremos una [página](https://bbycroft.net/llm) que está muy linda, que permite ver uno de estos modelos paso a paso.
+Basaremos el post analizando sobre un **LLM GPT (Generative Pre-Training)**, osea un modelo de **IA Generativa** que es **decoder-only**, dado que citaremos una [página](https://bbycroft.net/llm) que está muy linda, que permite ver uno de estos modelos paso a paso.
 
 | Arquitectura Decoder-only | Arquitectura NanoGPT |
 |---|---|
@@ -133,16 +133,16 @@ Basaremos el post analizando sobre un LLM GPT (Generative Pre-Training), osea un
 
 Por lo que el posteo será hablar de sus etapas, o capas:
 
-1. Tokenizer/Embedding
-2. Self Attention
-3. MLP/ FeedForward
-4. Output
+1. **Tokenizer/Embedding**
+2. **Self Attention**
+3. **MLP/ FeedForward**
+4. **Output**
 
 Hay otras capas adicionales que se utilizan:
-* Normalización (Layer Normalization)
-* Conexión Residual (Residual)
-* Linear
-* Softmax
+* **Normalización (Layer Normalization)**
+* **Conexión Residual (Residual)**
+* **Linear**
+* **Softmax**
 
 Estas capas no las explicaremos dado que son bastante teóricas y relacionadas fuertemente con aritmética de computadoras y probabilidad.
 
@@ -182,8 +182,8 @@ Así es, a partir de ahora introducimos el concepto de **tokens** que son las di
 
 
 La misión ahora es tratar de tener en cuenta cada pedacito recortado.
-Luego convertiremos cada pedacito o token en un vector numérico y lo llamaremos *Embedding*. Para diferenciar cada token se usan los Token Embeddings y para saber información acerca del órden que aporta cada palabra se usan los Positional Embeddings. Ya que la compu no sabe (La arquitectura usada no sabe por sí mismo cuál es el órden de un token en la secuencia de tokens).
-Entonces para cada token hay un "Token Embedding", "Position Embedding", que cada uno representan: El token en sí, y el órden que ocupa el token en la frase.
+Luego convertiremos cada pedacito o token en un vector numérico y lo llamaremos *Embedding*. Para diferenciar cada token se usan los **Token Embeddings** y para saber información acerca del órden que aporta cada palabra se usan los **Positional Embeddings**. Ya que la compu no sabe (La arquitectura usada no sabe por sí mismo cuál es el órden de un token en la secuencia de tokens).
+Entonces para cada token hay un **Token Embedding**, **Position Embedding**, que cada uno representan: El token en sí, y el órden que ocupa el token en la frase.
 
 Porqué necesitamos el orden? Coherencia.
 
@@ -215,8 +215,8 @@ El modelo no entiende de tokens, sólo entiende de embeddings.
 
 Sucede una gran magia en los embeddings que es media compleja asi que no la explicaremos acá, y esa transformación a un vector seguro les pierda porque falta explicar una parte, pero quedense con lo visto.
 
-* Token Embedding: va a representar qué es "Maradona", y se va a ir recalculando.
-* Positional Embedding: va a representar dónde está el token en la frase.
+* **Token Embedding:** va a representar qué es "Maradona", y se va a ir recalculando.
+* **Positional Embedding:** va a representar dónde está el token en la frase.
 
 Buscamos entonces sumar ambos vectores generando así el **Input Embedding**.
 
@@ -224,7 +224,7 @@ $$\text{Input Embedding} = \text{Token Embedding} + \text{Positional Embedding}$
 
 Como si fuera ArtAttack nos quedaremos con este resultado sacado sin fundamento, pero para que se vea qué es lo que se enviará a la primer etapa del tranformer.
 
-Input embedding ("Maradona", posición 0) = [ 0.93, -0.18, 1.16, 0.48, -0.47, 0.53 ]
+**Input embedding** ("Maradona", posición 0) = [ 0.93, -0.18, 1.16, 0.48, -0.47, 0.53 ]
 
 Bueno pero retomemos nuestro ejemplo con la frase de Batty, donde no se utiliza el tokenización por palabra:
 
@@ -280,8 +280,8 @@ Esto agregado con la capa de MLP o FeedFordward se "recalcula" y de esta forma e
 
 ### MLP/ FeedForward
 
-Esto es complejo pero aquí se aplica una red neuronal, que mejora el modelo, y se introducen funciones no lineales como la famosa ReLU (Rectified Linear Unit), esta parte puede ser vista como una "minimización" de la función de costos (Esto me lo hizo ver ezeluduena). Utilizando el descenso del gradiente.
-Acá hay mucho para hablar, participan factores muy populares como la entropía, y el error cuadrático medio. Para cualquier persona que no sea de la temática medio que puede saltarse a la prox etapa que sería la de output, dado que ya "aprendió" como funciona un LLM.
+Esto es complejo pero aquí se aplica una **red neuronal**, que mejora el modelo, y se introducen funciones no lineales como la famosa **ReLU (Rectified Linear Unit)**, esta parte puede ser vista como una **minimización** de la función de costos (Esto me lo hizo ver ezeluduena). Utilizando el **descenso del gradiente**.
+Acá hay mucho para hablar, participan factores muy populares como la **entropía**, y el **error cuadrático medio**. Para cualquier persona que no sea de la temática medio que puede saltarse a la prox etapa que sería la de output, dado que ya "aprendió" como funciona un LLM.
 
 La no-linealidad y ver que estamos buscando una minimización o "maximización" queda más claro al ver esta figura, y por eso el descenso del gradiente es una buena técnica para encontrar esos mínimos.
 
@@ -295,11 +295,11 @@ Y el [link al collab](https://colab.research.google.com/drive/1kSuRAKVMecpkik0I_
 
 ### Output
 
-Obtendremos una lista de probabilidades para la palabra siguiente
+Obtendremos una lista de **probabilidades** para la palabra siguiente
 
 ![Salida del modelo](/assets/img/output.png)
 
-También podemos controlar la suavidad de la distribución mediante un parámetro de temperatura. Una temperatura más alta hará que la distribución sea más uniforme, y una temperatura más baja la concentrará más en los tokens con mayor probabilidad.
+También podemos controlar la suavidad de la distribución mediante un **parámetro de temperatura**. Una temperatura más alta hará que la distribución sea más uniforme, y una temperatura más baja la concentrará más en los tokens con mayor probabilidad.
 
 ## Fin
 
