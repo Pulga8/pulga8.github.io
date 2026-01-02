@@ -162,7 +162,7 @@ Cuya traducción un poco a mi forma aprox: *"Es una locura vivir con miedo, no? 
 
 
 {:.block-tip}
-Así es, a partir de ahora introducimos el concepto de **tokens** que son las divisiones que hará cada modelo para poder "entender" nuestras frases. En criollo recortes de nuestra frase.
+Así es, a partir de ahora introducimos el concepto de **tokens** que son las divisiones que hará cada modelo para poder "entender" nuestras frases. En criollo recortes de nuestra frase, tal como se ve en las imágenes de arriba.
 
 <details>
 <summary>Ver otros tipos de tokenización</summary>
@@ -181,24 +181,27 @@ Así es, a partir de ahora introducimos el concepto de **tokens** que son las di
 </details>
 
 
-La misión ahora es tratar de tener en cuenta cada pedacito recortado, para más facilidad utilizemos "Tokenización basada en palabras" donde cada token representa una palabra, como vimos debemos convertir cada palabra en un "token".
+La misión ahora es tratar de tener en cuenta cada pedacito recortado.
 Luego convertiremos cada pedacito o token en un vector numérico y lo llamaremos *Embedding*. Para diferenciar cada token se usan los Token Embeddings y para saber información acerca del órden que aporta cada palabra se usan los Positional Embeddings. Ya que la compu no sabe (La arquitectura usada no sabe por sí mismo cuál es el órden de un token en la secuencia de tokens).
 Entonces para cada token hay un "Token Embedding", "Position Embedding", que cada uno representan: El token en sí, y el órden que ocupa el token en la frase.
 
-Porqué necesitamos el orden?
+Porqué necesitamos el orden? Coherencia.
 
-No es lo mismo decir: "Mañana tengo que ir al banco a sacar plata."
+No es lo mismo decir: 
+> "Mañana tengo que ir al banco a sacar plata."
 
-Que decir: "Plata a sacar banco ir al mañana tengo"
+Que decir:
+> "Plata a sacar banco ir al mañana que tengo"
 
-Por lo que es necesario "recordar" con los Position Embeddings el orden de las palabras en la frase. (Coherencia)
-Recordemos que todo esto está basado fuertemente en la lingüística.
+Por lo que es necesario "recordar" con los Position Embeddings el orden de las palabras en la frase.
+Todo esto está basado fuertemente en la lingüística, proviende del Procesamiento del Lenguaje Natural (NLP).
 
-Tomemos una palabra como ejemplo:
 
-**Entrada:** "Maradona"
+#### Tokenizemos y embeddiemos una palabra(?
 
-**Proceso:**
+Para más facilidad en este ejemplo utilizemos "Tokenización basada en palabras" donde cada token representa una palabra, como vimos debemos convertir cada palabra en un "token".
+Tomemos una palabra como ejemplo: "Maradona"
+
 1. Tokenización → `token = "Maradona"`
 2. Asignación de ID → `token_id = 18427`
 3. Conversión a embedding → `embedding = [0.91, -0.33, 1.27, 0.08, -0.54, 0.62]`
@@ -210,7 +213,7 @@ Tomemos una palabra como ejemplo:
 
 El modelo no entiende de tokens, sólo entiende de embeddings.
 
-Sucede una gran magia en los embeddings que es media compleja asi que no la explicaremos acá, pero esa transformación a un vector seguro les pierda porque falta explicar una parte, pero quedense con lo visto.
+Sucede una gran magia en los embeddings que es media compleja asi que no la explicaremos acá, y esa transformación a un vector seguro les pierda porque falta explicar una parte, pero quedense con lo visto.
 
 * Token Embedding: va a representar qué es "Maradona", y se va a ir recalculando.
 * Positional Embedding: va a representar dónde está el token en la frase.
@@ -223,55 +226,82 @@ Como si fuera ArtAttack nos quedaremos con este resultado sacado sin fundamento,
 
 Input embedding ("Maradona", posición 0) = [ 0.93, -0.18, 1.16, 0.48, -0.47, 0.53 ]
 
+Bueno pero retomemos nuestro ejemplo con la frase de Batty, donde no se utiliza el tokenización por palabra:
 
-![Embedding "work" comparado con muchas palabras, en concreto la imagen muestra el comparativa con la palabra "went"](/assets/img/embedding.png)
-> Fuente: [Generative AI](https://ig.ft.com/generative-ai/)
+![Tokenización de la frase de Batty](/assets/img/tokenizer.png)
 
-Como podemos observar en la parte inferior de la imagen la palabra work y su embedding asociado, que tiene los valores comparados contra la palabra "*went*"
-
-![Embeddings de palabras relacionadas](/assets/img/similar_embedding.png)
-> Fuente: [Generative AI](https://ig.ft.com/generative-ai/)
-
-En esta imagen podemos ver como palabras como "sea" (mar) y "ocean" (océano) tienen embeddings parecidos porque representan cosas similares y así con otros ejemplos.
-
-{: .block-tip}
+{: .box-info}
 Ahora ya sabemos que los "Embeddings" son los tokens vectorizados, osea los tokens convertidos en vectores de números, que nos permiten capturan la información semántica y sintáctica de las palabras que representan.
 
 ### Self Attention
 
-Esta parte es donde se trata de identificar que relación hay entre cada palabra, por ello es un cálculo de cuánto afecta la representación de un embedding contra todos los otros embeddings. Permite capturar significados y relaciones entre tokens. A esto se le suele sumar **Multi-Head Attention**, lo cual son varias "cabezas de atención" lo que sería comparable con la idea de prestarle atención a dsitintas partes de la frase, con la aplicación de la multicabeza se puede prestar atención a más patrones, y por ejemplo a dos frases separadas, etc.
+{: .box-warning}
+Es la parte más densa de la lectura
+
+Esta parte es donde se trata de identificar que relación hay entre cada palabra, por ello es un cálculo de cuánto afecta la representación de un embedding contra todos los otros embeddings. Permite capturar significados y relaciones entre tokens. A esto se le suele sumar **Multi-Head Attention**, lo cual son varias "cabezas de atención" lo que sería comparable con la idea de prestarle atención a distintas partes de la frase, con la aplicación de la multicabeza se puede prestar atención a más patrones, y por ejemplo a dos frases separadas, etc.
 
 Vamos a tomar el ejemplo de Santiago Fiorino:
 
-"Mañana tengo que ir al **banco** a sacar plata."
-
-"Nos sentamos en el **banco** de la plaza a tomar mate."
+"Mañana tengo que ir al **banco** a sacar plata." / "Nos sentamos en el **banco** de la plaza a tomar mate."
 
 ![Comparativa de embeddings de las dos frases mencionadas](/assets/img/ejemplo_santiago.png)
 
-Encima de cada palabra está su respectivo embedding, notar como la palabra **banco** tiene el mismo embedding pero se usa en frases con contextos distintos, donde uno tiene relación con una entidad financiera y el otro con un asiento. Para poder entender dicha situación, el humano interpreta el contexto donde está hubicada la palabra.
+Encima de cada palabra está su respectivo embedding, notar como la palabra **banco** tiene el mismo embedding pero se usa en frases con contextos distintos, donde uno tiene relación con una entidad financiera y el otro con un asiento. Para poder entender dicha situación, el humano interpreta el contexto donde está ubicada la palabra.
 Para ello se tiene en cuenta cuánto debería afectar cada palabra a cada otra palabra, por ejemplo la relación entre banco y plata debería ser mucho más significante que la relación entre banco y mañana.
 
-Para ello generamos una matriz NxN, donde en cada posición de la matriz estará en un valor numérico la respuesta a cuánto debería influir la palabra "i" a la hora de actualizar la palabra "j".
-Textual de Santiago Fiorino.
+*"Para ello generamos una matriz NxN, donde en cada posición de la matriz estará en un valor numérico la respuesta a cuánto debería influir la palabra 'i' a la hora de actualizar la palabra 'j'"* -
+Santiago Fiorino.
 
+**Matriz de Query**: representa lo que estamos buscando en los otros tokens
 
-Para cada token se utilizan tres vectores clave: Query (Q), Key (K) y Value (V).
+**Matriz de Key**: representa la "clave", qué tan inportante es un token para el otro token que estamos analizando.
 
-Matriz de Query: representa lo que estamos buscando en los otros tokens
-Matriz de Key: representa la "clave", qué tan inportante es un token para el otro token que estamos analizando.
+![Ejemplo de matriz](/assets/img/matriz_ej.png)
+> Ejemplo de Santiago mostrando cómo se crea la matriz Q⋅K
+
+Entonces esos valores que den se "normalizan" para que queden en números entre 0 y 1, donde si entre dos palabras el valor es 0 entonces no tienen relación entre sí, por lo contrario si el valor es 1, entonces tienen una relación importante entre sí.
 
 Con las anteriores matrices sabemos cuánto tiene que afectar una palabra a otra pero no "como", por ello viene esta tercer matriz.
 
-Matriz de Value: información real.
+**Matriz de Value**: información real.
+
+![Ejemplo de matriz](/assets/img/matriz_ej2.png)
+
+Con eso obtenemos una matriz de valores con toda la información necesaria.
 
 Esto tiene una fórmula terrorífica que es:
 
 $$Attention(Q,K,V)=softmax(\frac{QK^T}{\sqrt{d_k}})V$$
 
 
-![Pasos](/assets/img/pasos.png)
+Esto permite realizar un cálculo de relaciones entre todas las palabras, teniendo en cuenta distintos factores, donde además mientras se entrene y reentrene, va a permitir calcular las probabilidades de cuantas veces determinada palabra está "cerca" de otra y bajo un mismo "contexto".
+Por lo que estas relaciones permiten que el modelo "aprenda" qué palabras están más relacionadas en diferentes contextos.
+Esto agregado con la capa de MLP o FeedFordward se "recalcula" y de esta forma el modelo "aprende", que como vimos no "aprende" sino que calcula.
 
+### MLP/ FeedForward
+
+Esto es complejo pero aquí se aplica una red neuronal, que mejora el modelo, y se introducen funciones no lineales como la famosa ReLU (Rectified Linear Unit), esta parte puede ser vista como una "minimización" de la función de costos (Esto me lo hizo ver ezeluduena). Utilizando el descenso del gradiente.
+Acá hay mucho para hablar, participan factores muy populares como la entropía, y el error cuadrático medio. Para cualquier persona que no sea de la temática medio que puede saltarse a la prox etapa que sería la de output, dado que ya "aprendió" como funciona un LLM.
+
+La no-linealidad y ver que estamos buscando una minimización o "maximización" queda más claro al ver esta figura, y por eso el descenso del gradiente es una buena técnica para encontrar esos mínimos.
+
+![Función no lineal](/assets/img/minimizacion.png)
+
+Para flasharla un poco más dejo esta filmina de Victoria Peterson
+
+![Descenso del gradiente](/assets/img/gradiente.png)
+
+Y el [link al collab](https://colab.research.google.com/drive/1kSuRAKVMecpkik0I_8SSYDx2WwHhb1Rk) que es buenísimo de ella.
+
+### Output
+
+Obtendremos una lista de probabilidades para la palabra siguiente
+
+![Salida del modelo](/assets/img/output.png)
+
+También podemos controlar la suavidad de la distribución mediante un parámetro de temperatura. Una temperatura más alta hará que la distribución sea más uniforme, y una temperatura más baja la concentrará más en los tokens con mayor probabilidad.
+
+## Fin
 
 Gracias por leer el post, espero que haya aclarado un poco más esto de los LLMs, y algunas cosas de la IA. Se irán agregando posteos para profundizar en distintos aspectos mencionados en el post. Recomiendo fuertemente las referencias, en particular los links que son interactivos como:
 * Transformers Explainer
