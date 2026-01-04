@@ -20,7 +20,7 @@ lang: es
 robots: index, follow
 mathjax: true
 canonical_url: https://pulga8.github.io/technology/ai/ia-y-demas-yuyos/
-reading_time:
+reading_time: 15 min read
 author: Pulga
 ---
 
